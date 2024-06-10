@@ -1,0 +1,32 @@
+#test div {
+	margin-bottom: 10px;
+}
+.but
+{
+   border: 0;
+   border-radius: 9px;
+   background: #fdfdfd;
+   color: #000000;
+   padding: 10px 25px;
+   width: 30%;
+   font-size: 15pt;
+   display: block;
+   margin: 2px auto;
+   cursor: pointer;
+}
+
+
+.correct {
+	background-color: rgb(165, 231, 165);
+}
+.incorrect {
+	background-color: rgb(240, 160, 160);
+}
+.text{
+    display: block;
+    text-indent: 2%;
+    margin: 0% 10%;
+    font-size: 23px;
+    text-align: justify;
+  }
+  

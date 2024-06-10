@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-color: #767676;
+}
+.header{
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-image: url(../img/tild3830-3966-4464-b263-353635333339__13.jpg);
+      background-size: cover;
+      width: auto;
+      height: auto;
+}
+
+
+.tit{
+  
+  font-size: 80px;
+}
+p{
+  color: white;
+}
+a{  
+  text-decoration: none;
+  color: white;
+}
+
+.site-header{
+  
+      flex-direction: row;
+      display: flex;
+      width: 1300px;
+      height: 50px;
+      padding: 25px 15px;
+      justify-content:  space-around;
+
+}
+
+.mk{
+  font-size: 90px;
+  padding: 1px 50px;
+  display: flex;
+  justify-content: end;
+}
+  .osn{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color:  #121212;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+  }
+  .ter{
+    font-size: 100px;
+    color: white;
+  }
+
+.zag{
+    display: block;
+    padding: 2% 5%;
+  }
+  
+.tabl{
+  
+  padding: 5% 2%;
+}
+
+  table {
+    border-collapse: collapse;
+    width: 95%;
+    border: 1px solid #171515;
+ }
+ td {
+  line-height: 30px;
+  vertical-align:top;
+  padding: 20px;
+  font-size: 25px;
+  border: 1px solid #171515;
+ }
+
+th{
+padding: 20px;
+text-align:left;
+vertical-align:bottom;
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+}
+
+footer{
+  margin: 0;
+  background-color: #313030;
+  flex-direction: row;
+  display: flex;
+  width: auto;
+  height: 100px;
+  padding: 25px 15px;
+  justify-content:  space-around;
+  color: #f1eeee;
+  }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+   
+  .back-to-top:hover {
+    background: #333;
+    text-decoration: none;
+  }
