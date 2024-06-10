@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/composition.css">
+    <title>Произведения</title>
+</head>
+<body>
+    <div class="header">
+
+        <header class="site-header">
+            <a href="main.html">ГЛАВНАЯ</a>
+            <a href="participants.html">УЧАСТНИКИ</a>
+            <a href="history.html">ИСТОРИЯ</a>
+            <a href="#">ПРОИЗВЕДЕНИЯ</a>
+            <a href="heritage.html">НАСЛЕДИЕ</a>
+        </header>
+        <div class = "mk">
+        <p align = "right">Могучая кучка</p>
+        </div>
+      </div>
+
+      
+    <div class="osnova">
+      <div class="osnl">
+        <div class="op">
+      <h1>Основные произведения</h1>
+    </div>
+
+    <div class="sp">
+      <ul>
+        <li>М.А.Балакирев</li> 
+        <dl>
+              <dd>Музыка к трагедии В.Шекспира «Король Лир»<a href="https://music.yandex.ru/album/9526352/track/61195926" target="_blank"> <img src="img/нота 8я.png" width="20" height="20"></a></dd>
+              <dd>Увертюра на тему испанского марша</dd>
+            <dl>
+            <dt>Романсы:</dt>
+              <dd>«Жаворонок»</dd>
+              <dd>«Ты пленительной неги полна»</dd>
+              <dd>«Взошёл на небо месяц»</dd>
+            </dl>
+        <dt>Увертюра</dt>
+              <dd>«1000 лет»</dd>
+            </dl>      
+        <li>А.П.Бородин</li>
+        <dl>
+            <dt>Оперы:</dt>
+                <dd>«Князь Игорь»<a href="https://youtu.be/0-go6DOIjDg?si=3Ra8x5h25XYsnQu9"target="_blank"> <img src="img/gktq.png" width=auto height="25"></a></dd>
+                <dd>«Богатыри»</dd>
+        </dl>
+               <li>Ц.А.Кюи</li>
+        <dl>      
+            <dt>Оперы:</dt>
+              <dd>«Пир во время чумы»</dd>
+              <dd>«Капитанская дочка»</dd>
+              <dd>«Красная шапочка»</dd>
+              <dd>«Кот в сапогах»</dd>
+              <dd>«Кавказский  пленник»</dd>
+            </dl>
+        <li>М.П.Мусоргский</li>
+        <dl>
+            <dt>Оперы:</dt>
+              <dd>«Борис Годунов»</dd>
+              <dd>«Хованщина»</dd>
+        </dl>
+        <li>Н.А.Римский-Корсаков</li>
+        <dl>
+            <dt>Романсы:</dt>
+              <dd>«Увертюра на темы трёх русских песен»</dd>
+              <dd>«Сербская фантазия»</dd>
+              <dl>
+            <dt>Оперы:</dt>
+              <dd>«Псковитянка»</dd>
+              <dd>«Царская невеста»</dd>
+              <dd>«Ночь перед Рождеством»</dd>
+              <dd>«Садко»</dd>
+              <dd>«Моцарт и Сальери»</dd>
+              <dd>«Сказка о царе Салтане»</dd>
+              <dd>«Золотой петушок»</dd>
+              </dl>
+        </dl>
+      </ul>
+
+    </div>
+   
+</div>
+
+<div class="osnr">
+  <iframe frameborder="0" width="130%" height="100%" src="https://music.yandex.ru/iframe/playlist/mackuz/1192">Слушайте <a href='https://music.yandex.ru/users/mackuz/playlists/1192'>Classical/Могучая кучка</a> — <a href='https://music.yandex.ru/users/mackuz'>mackuz</a> на Яндекс Музыке</iframe></div>
+</div>
+
+<footer>
+  <p>Контакты:</p>
+  <p>Бахчиванжи Александра</p>
+<p>
+Почта: <a href="mailto:aabaxchivanzhi@mail.ru">aabaxchivanzhi@mail.ru</a>.
+</p>
+  <a href=""><img src="img/vk.png" width="50" height="50"></a>
+  <a href="tel:+79001111111"><img src="img/Group 24 (1).png" width="42" height="42"></a>
+</footer>
+
+</body>
+
+<a href="#top" id="back-to-top" class="back-to-top" title="Back to top">▲</a>
+
+<script> 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTop = document.getElementById("back-to-top");
+ 
+  // Показать/скрыть кнопку при прокрутке страницы
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 300) {
+      backToTop.style.display = "block";
+    } 
+    else {
+      backToTop.style.display = "none";
+    }
+  });
+ 
+  // Плавная прокрутка при клике на кнопку
+  backToTop.addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+
+</script>
+</html>

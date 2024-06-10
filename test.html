@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/test.css">
+    <title>Test</title>
+
+</head>
+<body>
+    <div class="test_">
+        <div id="test">
+            <div id="test"></div>
+            <button class ="but" id="button">Проверить</button>
+        
+        
+        <script>
+        
+        let test = document.querySelector('#test');
+        
+        let questions = [
+            {
+                text: 'Кто дал название «Могучей кучке»? 1. В.Стасов  2. Н.Римский-Корсаков 3. М.Мусоргский',
+                right: 0,
+                answers: ['answer1', 'answer2', 'answer3',]
+            },
+            {
+                text: 'Кого считали лидером содружества?1. М.Балакирев  2. Н.Римский-Корсаков 3. М.Мусоргский',
+                right: 0,
+                answers: ['answer1', 'answer2', 'answer3',]
+            },
+            {
+                text: 'Чьим творчеством вдохновлялись участники «Могучие кучки»? 1. Д.Шостакович  2. Ф.Шуберт 3. М.Глинка',
+                right: 2,
+                answers: ['answer1', 'answer2', 'answer3',]
+            },
+            {
+                text: 'В каком году открыли Бесплатную музыкальную школу?1.1902 г.  2.1862 г.  3.1898 г.',
+                right: 1,
+                answers: ['answer1', 'answer2', 'answer3',]
+            },
+            {
+                text: 'Почему распалась «Могучая кучка»? 1.Переезд Римского-Корсакова  2.Не распадались, сменили название  3.Творческие расхождения',
+                right: 2,
+                answers: ['answer1', 'answer2', 'answer3',]
+            },
+        ];
+        
+        let i = 1;
+        for (let question of questions) {
+            let div = document.createElement('div');
+            test.appendChild(div);
+            
+            let p = document.createElement('p');
+            p.innerHTML = question.text;
+            div.appendChild(p);
+            
+            let form = document.createElement('form');
+            test.appendChild(form);
+            form.dataset.right = question.right;
+            
+            let j = 0;
+            for (let answer of question.answers) {
+                let input = document.createElement('input');
+                input.type = 'radio';
+                input.name = i;
+                input.dataset.answerNum = j++;
+                form.appendChild(input);
+            }
+            
+            i++;
+        }
+        
+        let button = document.querySelector('#button');
+        button.addEventListener('click', function() {
+            let forms = document.querySelectorAll('#test form');
+            let score = 0;
+            for (let form of forms) {
+                form.classList.remove('correct');
+                form.classList.remove('incorrect');
+                
+                let inputs = form.querySelectorAll('input');
+                
+                for (let input of inputs) {
+                    if (input.checked) {
+                        if (input.dataset.answerNum == form.dataset.right) {
+                            form.classList.add('correct');
+                            score++;
+                        } else {
+                            form.classList.add('incorrect');
+                        }
+                        
+                        break;
+                    }
+                }
+            }
+        
+        });
+            </script>
+        
+        </div>
+        </div>
+</body>
+</html>

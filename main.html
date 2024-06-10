@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Могучая кучка</title>
+</head>
+
+
+<body>
+  <div class="header">
+
+    <header class="site-header">
+      <a href="main.html">ГЛАВНАЯ</a>
+        <a href="participants.html">УЧАСТНИКИ</a>
+        <a href="history.html">ИСТОРИЯ</a>
+        <a href="composition.html">ПРОИЗВЕДЕНИЯ</a>
+        <a href="heritage.html">НАСЛЕДИЕ</a>
+    </header>
+
+
+    <div class = "mk">
+    <p align = "right">Могучая кучка</p>
+    </div>
+  </div>
+
+  <div class= "OSN">
+
+  <div class= "CTR" >
+  <p class="tit">МОГУЧАЯ КУЧКА</p>
+    <p align = "left"> творческое содружество русских композиторов, сложившееся в конце 50 — начале 60-х гг. 19 века.
+       Известно также под названием «Новая русская музыкальная школа», Балакиревский кружок. 
+      В «Могучую кучку» входили М.А.Балакирев, А.П.Бородин, Ц.А.Кюи, М.П.Мусоргский, Н.А.Римский-Корсаков.</p>
+  </div>
+  
+  <img  class="img1" width="426" height="586" src = "img/Group 12.png">
+
+  </div>
+  <footer>
+    <p>Контакты:</p>
+    <p>Бахчиванжи Александра</p>
+<p>
+  Почта: <a href="mailto:aabaxchivanzhi@mail.ru">aabaxchivanzhi@mail.ru</a>.
+</p>
+    <a href=""><img src="img/vk.png" width="50" height="50"></a>
+    <a href="tel:+79001111111"><img src="img/Group 24 (1).png" width="42" height="42"></a>
+</footer>
+</body>
+
+<a href="#top" id="back-to-top" class="back-to-top" title="Back to top">▲</a>
+
+<script> 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTop = document.getElementById("back-to-top");
+ 
+  // Показать/скрыть кнопку при прокрутке страницы
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 300) {
+      backToTop.style.display = "block";
+    } 
+    else {
+      backToTop.style.display = "none";
+    }
+  });
+ 
+  // Плавная прокрутка при клике на кнопку
+  backToTop.addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+
+</script>
+
+</html>
